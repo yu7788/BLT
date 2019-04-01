@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-2.2.1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="nav_btn nav_btn_a"></div>
+        <ul class="nav">
+            <li><a href="#">貝萊通机器人</a></li>
+            <li><a href="#">登录</a></li>
+         </ul>
+    </header>
+<section>
+
+    <!--banner导航图-->
+    <div class="banner">
+        <img src="img/banner.png" />
+    </div>
+
+    <!--内容区域-->
+    <div class="box">
+        <div class="token">
+            <img src="img/shouye_gonggao_icon.png" />
+            <p>最新公告:</p>
+            <p class="token_title">貝萊通-数字货币自动量化搬砖套利服务平台</p>
+        </div>
+        <div class="trait">
+            <h3>平台特点</h3>
+            <ul class="trait_lists">
+                <li class="list_a"><img src="img/shouye_tedian_1.png" /></li>
+                <li class="list_b"><img src="img/shouye_tedian_2.png" /></li>
+                <li class="list_c"><img src="img/shouye_tedian_3.png" /></li>
+            </ul>
+        </div>
+        <div class="detail">
+            <h3>貝萊通搬砖套利</h3>
+            <p class="detail_content">设定貝萊通搬砖套利定额基金，场内有资金退出套利基金时，场外资金才可进入，满额不再接受资金进场，套利基金额度跟搬砖套利实际需求资金匹配，可以随时调整基金额度。</p>
+            <a href="#" class="details">查看详情 >>></a>
+        </div>
+        <div class="rule">
+            <h3>貝萊通规则</h3>
+            <ul class="rule_lists">
+                <li><p>1.投资人资金进出灵活，收益和本金每期到账，账户金额随时退出（锁定期间不可提现，未锁定期间7*24小时内到账）</p></li>
+                <li><p>2.每期投入金额锁定周期，每期套利目标金额为准，投满截止，例如基金总资产池3000万，本期本期套利目标金额2000万，本期套利产品发布，投资人抢投，满额本期套利投入结束</p></li>
+                <li><p>3.每期套利投资人收益2%-4%<br />　　(1)2%每月完成3次套利月息6分<br />　　(2)3%每月完成三次套利月息9分<br />　　(3)4%每月完成3次套利月息1.2角</p></li>
+                <li><p>4.推荐投资收益，推荐人会额外获得推荐投资人每期收益的50%，例如:张三推荐李四投资10万，李四本期收益3000，张三推荐收益为3000*50%=1500（额外多获得，非从李四收益中获得）<br />如果李四每月完成3期套利，李四的收益3000*3=9000，张三推荐收益为9000*50%=4500（额外多获得，非从李四收益中获得）</p></li>
+            </ul>
+        </div>
+        <div class="about">
+            <h3>关于我们</h3>
+            <p class="about_content">设定貝萊通搬砖套利定额基金，场内有资金退出套利基金时，场外资金才可进入，满额不再接受资金进场，套利基金额度跟搬砖套利实际需求资金匹配，可以随时调整基金额度。</p>
+            <img src="img/shouye_guanwuwomen_tu.png" />
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer_box">贝莱通搬砖套利服务平台|基金</div>
+</footer>
+</body>
+<script type="text/javascript">
+           $(function(){
+            $(".nav_btn").click(function () {
+                $(".nav").slideToggle(200);
+                if ($(this).hasClass("nav_btn_a")){
+                    $(this).removeClass("nav_btn_a").addClass("nav_btn_b")
+                } else{
+                    $(this).removeClass("nav_btn_b").addClass("nav_btn_a")
+                }
+                $("section").click(function () {
+                    $(".nav").slideUp(200);
+                    $(".nav_btn").removeClass("nav_btn_b").addClass("nav_btn_a")
+                })
+            });
+        })
+</script>
+
+</html>
