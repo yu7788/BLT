@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <script type="text/javascript" src="/js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/css/sweetalert.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-signin" method="POST" action="/login">
+        <!--{{csrf_field()}}-->
+        <h2 class="form-signin-heading login">請登錄</h2>
+        <img src="../img/shouye_xiangmu_logo.png" class="img_logo"/>
+        <label for="inputName" class="sr-only account_name">賬號</label>
+        <input type="tel" name="name" id="inputName" class="form-control account_num" placeholder="手機號碼" required autofocus>
+        <label for="inputPassword" class="sr-only password">密碼</label>
+        <input type="password" name="password" id="inputPassword" class="form-control password_num" placeholder="密碼" required>
+        <div class="checkbox">
+            <label class="remenber_name">
+                <input type="checkbox" value="1" name="is_remember" class="remenber"> 記住我
+            </label>
+        </div>
+        <!--@include('layouts.error')-->
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陸</button>
+        <a href="/register" class="btn btn-lg btn-primary btn-block" type="submit">註冊</a>
+
+        <a href="#" class="btn_a">忘記密碼?</a>
+    </form>
+
+
+</div> <!-- /container -->
+
+
+</body>
+</html>

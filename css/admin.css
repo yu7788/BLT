@@ -1,0 +1,141 @@
+.col-lg-10{
+    width: 100%;
+}
+.sidebar-menu>li.active>a{
+    border-left: 0;
+}
+
+/*提现确认后弹框样式*/
+.order_form{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    /*父块透明，子块不透明，用rgba*/
+    background: rgba(0,0,0,0.3);
+}
+.order_form{
+    display: none;
+}
+.order_box{
+    display: block;
+    height: 300px;
+    width: 500px;
+    background: #ffffff;
+    border: 1px solid #8c8c91;
+    border-radius: 10px;
+    margin: 100px auto;
+    position: relative;
+}
+.p_title{
+    font-size: 24px;
+    color: #333333;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+.order_ipt{
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 105px;
+}
+.order_btn{
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    background: #5dc2f1;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 120px;
+}
+.order_btn_a{
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    background: #8c8c91;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+}
+.details_box{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    /*父块透明，子块不透明，用rgba*/
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+.details_box_content{
+    height: 500px;
+    width: 800px;
+    background: #ffffff;
+    border: 1px solid #8c8c91;
+    margin-top: 100px;
+    left: 50%;
+    margin-left: -400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+}
+.details_box_content >span{
+    font-size: 24px;
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 720px;
+}
+.details_box_content >span:hover{
+    cursor: pointer;
+    color: #e60000;
+}
+.user_name{
+    margin-top: 20px;
+}
+.btn_lists{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.shares{
+    display: none;
+}
+.charges{
+    display: none;
+}
+.user_name,.porders,.shares,.cashes,.charges{
+    margin-left: 5%;
+}
+.user_name >p{
+    font-size: 28px;
+    font-weight: 600;
+}
+.porders >p,.shares >p,.cashes >p,.charges >p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.details_lists table{
+    border: 1px solid #8c8c91;
+    border-collapse:collapse;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+

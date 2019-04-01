@@ -1,0 +1,40 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+.pagination{
+    position: relative;
+    float: right;
+    top: 0.5rem;
+    right:0.1rem;
+    bottom: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.pagination >li{
+    float: left;
+    height: 0.4rem;
+    width: 0.4rem;
+    border: 0.02rem solid #e60000;
+    border-radius: 0.1rem;
+    margin-right: 0.05rem;
+    display: inline;
+}
+.pagination >li >span{
+    display: block;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.pagination >li >a{
+    display: block;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.active{
+    background: #e60000;
+    color: #ffffff;
+}

@@ -1,0 +1,105 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #fdfdfd;
+}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.01rem solid #e8e8e9;
+    z-index: 10;
+}
+.logo{
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    background: url("../img/daohang_fanhui.png") no-repeat center;
+    background-size: 0.48rem 0.3rem;
+}
+.service{
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    right: 0.25rem;
+    top: 0.25rem;
+    background: url("../img/daohang_kefu.png") no-repeat center;
+    background-size: 0.4rem 0.4rem;
+}
+.account{
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #e60000;
+    font-weight: 600;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.9rem;
+}
+.notice{
+    height: 0.48rem;
+    width: 100%;
+    background: #dedede;
+    font-size: 0.26rem;
+    color: #e60000;
+    border-top: 0.02rem solid #a9a9a9;
+    border-bottom: 0.02rem solid #a9a9a9;
+    position: relative;
+}
+.notice >span{
+    display: inline-block;
+    height: 0.3rem;
+    width: 0.3rem;
+    margin: 0.09rem 0 0 0.4rem;
+    background: url("../img/zhangdanjilu_gonggao.png") no-repeat center;
+    background-size: 0.3rem 0.3rem;
+}
+.notice >p{
+    position: absolute;
+    left: 0.9rem;
+    top: 0.065rem;
+}
+.list{
+    height: 1.36rem;
+    border-bottom: 0.02rem solid #a9a9a9;
+    position: relative;
+}
+.type{
+    position: absolute;
+    top: 0.33rem;
+    left: 0.25rem;
+    font-size: 0.32rem;
+    font-weight: 600;
+}
+.status{
+    position: absolute;
+    top: 0.9rem;
+    left: 0.25rem;
+    font-size: 0.26rem;
+    color: #e60000;
+}
+.sum{
+    position: absolute;
+    top: 0.4rem;
+    right: 0.25rem;
+    font-size: 0.26rem;
+    color: #e60000;
+}
+.time{
+    position: absolute;
+    top: 0.9rem;
+    right: 0.25rem;
+    font-size: 0.26rem;
+    color: #4d4c53;
+}

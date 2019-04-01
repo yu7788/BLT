@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/gain.css">
+</head>
+<body>
+<header>
+    <a href="account.html"><div class="logo"></div></a>
+    <p class="account">套利订单</p>
+</header>
+<section>
+    <ul class="gain_lists">
+       <!-- <li class="list">
+            <p class="name">全球联盟基金</p>
+            <p class="time">已结束</p>
+            <p class="name_id">期号: <span>456</span></p>
+            <p class="sum">+<span>7000</span></p>
+        </li>-->
+        <li class="list">
+            <p class="name">全球联盟基金</p>
+            <p class="time">正在进行中</p>
+            <p class="name_id">期号: <span>456</span></p>
+        </li>
+    </ul>
+</section>
+</body>
+</html>

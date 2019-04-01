@@ -1,0 +1,153 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #fdfdfd;
+}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    background: url("../img/daohang_fanhui.png") no-repeat center;
+    background-size: 0.48rem 0.3rem;
+}
+.account{
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #e60000;
+    font-weight: 600;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.9rem;
+    border-top: 0.02rem solid #d2d2d2;
+}
+.details{
+    height: 10.91rem;
+    width: 6.56rem;
+    background: #fcfcfc;
+    margin: 0.8rem auto 0;
+    border: 0.02rem solid #fea7a7;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 0.04rem 0.02rem #ececec;
+    position: relative;
+}
+.beted{
+    position: absolute;
+    top: 0.6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+.beted_num{
+    position: absolute;
+    top: 1.4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #e60000;
+}
+.frost{
+    position: absolute;
+    top: 2.65rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.56rem;
+    font-weight: 600;
+    color: #605f65;
+    letter-spacing: 0.02rem;
+}
+.frost_num{
+    position: absolute;
+    top: 3.45rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #605f65;
+}
+.balance{
+    position: absolute;
+    top: 4.55rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+.balance_num{
+    position: absolute;
+    top: 5.32rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #e60000;
+}
+.total{
+    position: absolute;
+    top: 6.45rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+.total_num{
+     position: absolute;
+     top: 7.25rem;
+     width: 100%;
+     text-align: center;
+     font-size: 0.5rem;
+     color: #e60000;
+ }
+ .btn1,.btn2{
+     height: 0.9rem;
+     width: 5.3rem;
+     text-align: center;
+     line-height: 0.9rem;
+     font-size: 0.4rem;
+     background: #e60000;
+     border-radius: 0.1rem;
+     letter-spacing: 0.04rem;
+     position: absolute;
+     border: none;
+ }
+.btn1{
+    top: 8.4rem;
+    left: 0.63rem;
+    display: inline;
+}
+.btn1 >a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+}
+.btn2{
+    top: 9.55rem;
+    left: 0.63rem;
+    display: inline;
+}
+.btn2 >a{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+}

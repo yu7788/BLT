@@ -1,0 +1,112 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #ffffff;
+   }
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    border-bottom: 0.01rem solid #dedede;
+}
+.logo{
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    background: url("../img/daohang_fanhui.png") no-repeat center;
+    background-size: 0.48rem 0.3rem;
+}
+.account{
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #e60000;
+    font-weight: 600;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.9rem;
+    border-top: 0.02rem solid #d2d2d2;
+    overflow: hidden;
+}
+.list{
+    height: 1.3rem;
+    width: 100%;
+    border-top: 0.01rem solid #bcbbbe;
+    border-bottom: 0.01rem solid #bcbbbe;
+    position: relative;
+}
+.name{
+    font-size: 0.26rem;
+    position: absolute;
+    top: 0.24rem;
+    left: 0.25rem;
+    font-weight: 600;
+}
+.time{
+    font-size: 0.22rem;
+    position: absolute;
+    top: 0.24rem;
+    right: 0.2rem;
+}
+.name_id{
+    font-size: 0.22rem;
+    position: absolute;
+    top: 0.78rem;
+    left: 0.25rem;
+}
+.name_id >span{
+    color: #e60000;
+}
+.sum{
+    font-size: 0.22rem;
+    position: absolute;
+    top: 0.78rem;
+    right: 0.2rem;
+    color: #e60000;
+}
+.principal{
+    font-size: 0.22rem;
+    position: absolute;
+    top: 0.78rem;
+    right: 0.2rem;
+    color: #e60000;
+}
+.ctime{
+    font-size: 0.22rem;
+    position: absolute;
+    top: 0.78rem;
+    left: 1.3rem;
+}
+.classify{
+    font-size: 0.38rem;
+    margin: 0.3rem 0 1.3rem;
+    position: relative;
+    left: 1.95rem;
+}
+.classify >a{
+    float: left;
+    height: 0.6rem;
+    width: 1.8rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background: #dedede;
+    color: #e60000;
+    border-radius: 0.05rem;
+    display: block;
+}
+#btn1{
+    color: #ffffff;
+    background: #e60000;
+}

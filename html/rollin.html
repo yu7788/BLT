@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/rollin.css">
+    <script type="text/javascript" src="../js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="/js/rollin.js"></script>
+</head>
+<body>
+<header>
+    <a href="balance.html"><div class="logo"></div></a>
+    <p class="account">資金轉入</p>
+</header>
+    <section>
+        <div class="section_box">
+            <p class="classify">資金轉入</p>
+            <div class="logo_img"></div>
+            <div class="account_num">基金總池余額:&nbsp;<span>1234556&nbsp;USDT</span></div>
+            <div class="form-signin">
+                <label for="inputrollout" class="sr-only rollin_name">轉入額度</label>
+                <input type="number" name="number" id="inputrollout" class="form-control rollin_num" placeholder="請輸入轉入額度" required autofocus>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">確定轉入</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

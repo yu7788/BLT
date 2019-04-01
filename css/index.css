@@ -1,0 +1,233 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #ffffff;
+}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    border-bottom: 0.01rem solid #e8e8e9;
+}
+.logo{
+    height: 100%;
+    width: 1.8rem;
+    float: left;
+    background: url("../img/shouye_daohang_logo.png") no-repeat center;
+    background-size: 1.5rem 0.5rem;
+}
+.nav_btn{
+    height: 100%;
+    width: 0.9rem;
+    float: right;
+}
+.nav_btn_a{
+    background: url("../img/shouye_daohang_gengduo.png") no-repeat center;
+    background-size: 0.4rem 0.4rem;
+}
+.nav_btn_b{
+    background: url("../img/shouye_daohang_gengduo2.png") no-repeat center;
+    background-size: 0.4rem 0.4rem;
+}
+.nav{
+    position: absolute;
+    top: 0.9rem;
+    height: 2.73rem;
+    width: 100%;
+    display: none;
+}
+.nav >li{
+    height: 0.9rem;
+    width: 100%;
+    background: #282b3f;
+    opacity: 0.9;
+    border-bottom: 0.01rem solid #646473;
+    line-height: 0.9rem;
+    padding-left: 0.3rem;
+    font-size: 0.35rem;
+}
+.nav >li >a{
+    color: #ffffff;
+}
+section{
+    position: relative;
+    top: 0.9rem;
+    z-index: 1;
+}
+.banner{
+    z-index: 1;
+    height: 3.4rem;
+    width: 100%;
+}
+.banner >img{
+    height: 3.4rem;
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.token{
+    height: 0.62rem;
+    width: 6.53rem;
+    margin: 0.18rem auto 0;
+    border: 0.02rem solid red;
+    border-radius: 0.05rem;
+    background: #e8e8e9;
+}
+.token >img{
+    height: 0.35rem;
+    width: 0.35rem;
+    margin: 0.135rem 0.1rem 0 0.5rem;
+    display: inline-block;
+    float: left;
+}
+.token >p{
+    display: inline-block;
+    font-size: 0.3rem;
+    float: left;
+    line-height: 0.62rem;
+    color: red;
+ }
+.token_title{
+    display: inline-block;
+    font-size: 0.3rem;
+    float: left;
+    line-height: 0.62rem;
+    color: red;
+    width: 4.2rem;
+    /*white-space:nowrap;
+    text-overflow:ellipsis;*/
+    overflow:hidden;
+}
+.trait{
+    height: 5.27rem;
+    width: 100%;
+}
+.trait >h3{
+    font-size: 0.35rem;
+    text-align: center;
+    padding-top: 0.63rem;
+    font-weight: 900;
+}
+.trait_lists{
+    width: 5.7rem;
+    height: 100%;
+    margin: 0.6rem auto 0;
+}
+.trait_lists >li{
+    float: left;
+    height: 2.12rem;
+    width: 1.84rem;
+}
+.trait_lists >li >img{
+    height: 2.12rem;
+    width: 1.84rem;
+}
+.list_b{
+    margin-top: 0.5rem;
+    margin-left: 0.09rem;
+}
+.list_c{
+    margin-left: 0.09rem;
+}
+.detail{
+    height: 4.5rem;
+    width: 100%;
+    background: #f4f4f4;
+}
+.detail >h3{
+    font-size: 0.35rem;
+    text-align: center;
+    padding-top: 0.63rem;
+    font-weight: 900;
+}
+.detail_content{
+    width: 6.53rem;
+    margin: 0.53rem auto 0;
+    font-size: 0.22rem;
+    line-height: 0.4rem;
+    text-indent: 2em;
+}
+.details{
+    display: block;
+    font-size: 0.22rem;
+    color: red;
+    width: 6.53rem;
+    margin: 0.2rem auto 0;
+    text-align: right;
+}
+.rule{
+    height: 8.6rem;
+    width: 100%;
+}
+.rule >h3{
+    font-size: 0.35rem;
+    text-align: center;
+    padding-top: 0.63rem;
+    font-weight: 900;
+}
+.rule_lists{
+    width: 6.53rem;
+    height: 100%;
+    margin: 0.6rem auto 0;
+    font-size: 0.22rem;
+}
+.rule_lists li{
+    margin-bottom: 0.37rem;
+}
+.rule_lists li >p{
+    line-height: 0.4rem;
+}
+.about{
+    height: 7rem;
+    width: 100%;
+    background: #f4f4f4;
+}
+.about >h3{
+    font-size: 0.35rem;
+    text-align: center;
+    padding-top: 0.63rem;
+    font-weight: 900;
+}
+.about_content{
+    margin: 0.32rem auto 0;
+    width: 6.53rem;
+    text-indent: 2em;
+    font-size: 0.24rem;
+    word-wrap: break-word;
+    line-height: 0.4rem;
+}
+.about >img{
+    height: 3.2rem;
+    width: 100%;
+    display: block;
+    margin: 0.5rem auto 0;
+}
+footer{
+    height: 0.9rem;
+    width: 100%;
+    background: #000;
+    position: relative;
+    top: 0.9rem;
+}
+.footer_box{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    text-align: right;
+    margin-right: 0.3rem;
+}
+
+

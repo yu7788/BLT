@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <script type="text/javascript" src="/js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="/js/register.js"></script>
+    <script type="text/javascript" src="/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/css/sweetalert.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-signin">
+        <!--{{csrf_field()}}-->
+        <h2 class="form-signin-heading sign">請註冊</h2>
+        <img src="../img/shouye_xiangmu_logo.png" class="img_logo"/>
+        <label for="name" class="sr-only account_name">賬號</label>
+        <input type="tel" name="name" id="name" class="form-control account_num" placeholder="手機號碼" required autofocus>
+        <label for="inputEmail" class="sr-only email_name">郵箱</label>
+        <input type="email" name="email" id="inputEmail" class="form-control email_num" placeholder="郵箱" required autofocus>
+
+        <label for="inputReferee" class="sr-only referrer">推薦人</label>
+        <input type="tel" name="referee" id="inputReferee" class="form-control referrer_num" placeholder="推薦人手機號碼" >
+
+        <label for="inputPassword" class="sr-only password">密碼</label>
+        <input type="password" name="password" id="inputPassword" class="form-control password_num" placeholder="輸入密碼" required>
+        <label class="sr-only password_two">重復密碼</label>
+        <input type="password" name="password_confirmation" class="form-control password_two_num" placeholder="重復輸入密碼" required>
+        <label class="region">選擇地區</label>
+        <select name="select_a" id="select_a" class="select_a region_num_a">
+            <option>--请选择社區--</option>
+            <option value="廣西地區">廣西地區</option>
+            <option value="中部地區">中部地區</option>
+            <option value="濟南1">濟南1</option>
+            <option value="濟南2">濟南2</option>
+            <option value="濟南3">濟南3</option>
+        </select>
+        <select name="select" id="select" class="select region_num">
+            <option>--请选择社區--</option>
+            <option value="廣西地區">廣西地區</option>
+            <option value="中部地區">中部地區</option>
+            <option value="濟南1">濟南1</option>
+            <option value="濟南2">濟南2</option>
+            <option value="濟南3">濟南3</option>
+        </select>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">註冊</button>
+        <a href="#" class="btn_a">去登錄</a>
+    </div>
+
+</div>
+
+</body>
+</html>

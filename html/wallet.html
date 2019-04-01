@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/wallet.css">
+    <script src="../js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="../js/wallet.js"></script>
+</head>
+<body>
+<header>
+    <a href="account.html"><div class="logo"></div></a>
+    <p class="account">錢包地址</p>
+</header>
+
+<section>
+    <div class="wallet">
+        <p class="p_name">錢包地址:&nbsp;</p>
+        <p class="p_num">123456789</p>
+    </div>
+    <div class="handle">
+        <div class="revamp">更改</div>
+        <div class="cancel">取消</div>
+    </div>
+
+
+
+    <div class="form-signin">
+        <label for="name" class="sr-only wallet_name">更改錢包地址</label>
+        <input type="tel" name="name" id="name" class="form-control wallet_num" placeholder="請輸入新的錢包地址" required autofocus>
+        <button class="btn btn-lg btn-primary btn-block submit" type="submit">確認</button>
+    </div>
+</section>
+
+</body>
+</html>

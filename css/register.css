@@ -1,0 +1,242 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #ffffff;
+    overflow: hidden;
+}
+input,a{outline:none;}
+.container{
+    background: #ffffff;
+    overflow: hidden;
+}
+.form-signin{
+    height:100%;
+    width: 7rem;
+    margin: 0.5rem auto 0;
+    border-radius: 0.15rem;
+    box-shadow: 0 0 0.04rem 0.02rem #fafafa;
+    position: relative;
+}
+.sign{
+    font-size: 0.4rem;
+    color: #e60000;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    padding-top: 0.45rem;
+}
+.img_logo{
+    position: absolute;
+    right: 0.25rem;
+    top: 0.4rem;
+    height: 0.85rem;
+    width: 2.65rem;
+}
+.account_name{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.7rem;
+}
+.account_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.email_name{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
+.email_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.wallet_name{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
+.wallet_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.referrer{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
+.referrer_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.password{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
+.password_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.password_two{
+    display: block;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
+.password_two_num{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.3rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+    width: 5rem;
+    padding-left: 0.2rem;
+    display: block;
+}
+.region_a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.p_region{
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    position: relative;
+    top: -0.5rem;
+}
+.p_region_num{
+    margin-left: 0.25rem;
+    position: relative;
+    top: -0.5rem;
+    width: 3rem;
+    text-align: center;
+}
+.region_b{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: -0.7rem;
+}
+.region{
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    position: relative;
+    top: -0.5rem;
+}
+.region_num{
+    margin-left: 0.25rem;
+    position: relative;
+    top: -0.5rem;
+    width: 3rem;
+    text-align: center;
+}
+.btn{
+    height: 0.9rem;
+    width: 5.4rem;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.42rem;
+    letter-spacing: 0.3rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 0 0.8rem 1rem;
+    background: #e60000;
+    color: #ffffff;
+}
+.btn_a{
+    display: block;
+    font-size: 0.28rem;
+    position: relative;
+    color: #6fadd2;
+    left: 5.5rem;
+    bottom: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

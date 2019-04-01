@@ -1,0 +1,119 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{
+    font-family:"微软雅黑";
+    background: #ffffff;
+    overflow: hidden;
+}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    border-bottom: 0.01rem solid #dedede;
+}
+.logo{
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    background: url("../img/daohang_fanhui.png") no-repeat center;
+    background-size: 0.48rem 0.3rem;
+}
+.account{
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #e60000;
+    font-weight: 600;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.9rem;
+    border-top: 0.02rem solid #d2d2d2;
+}
+.wallet{
+    font-size: 0.36rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.3rem;
+}
+.p_name{
+    color: #000;
+    display: inline;
+}
+.p_num{
+    color: #e60000;
+    display: inline;
+}
+.handle{
+    position: absolute;
+    font-size: 0.36rem;
+    top: 1.5rem;
+    left: 4rem;
+}
+.revamp{
+    margin-left: 0.2rem;
+    height: 0.5rem;
+    width: 1.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background: #dedede;
+    display: inline-block;
+    border-radius: 0.1rem;
+}
+.cancel{
+    margin-left: 0.2rem;
+    height: 0.5rem;
+    width: 1.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background: #dedede;
+    display: inline-block;
+    border-radius: 0.1rem;
+    visibility:hidden;
+}
+.form-signin{
+    display: none;
+    position: absolute;
+    width: 6.9rem;
+    top: 2.2rem;
+    left: 0.3rem;
+}
+.wallet_name{
+    font-size: 0.36rem;
+    width: 6.9rem;
+    text-align: center;
+}
+.wallet_num{
+    height: 0.6rem;
+    width: 5.51rem;
+    margin: 0.1rem 0.5rem 0;
+    padding-left: 0.2rem;
+    border-radius: 0.2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.submit{
+    height: 0.9rem;
+    width: 5.31rem;
+    background: #e60000;
+    color: #ffffff;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    margin: 0.5rem 0.72rem 0;
+    border-radius: 0.25rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    border: none;
+}

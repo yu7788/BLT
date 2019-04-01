@@ -1,0 +1,91 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body,html{
+    font-family:"微软雅黑";
+    background: #fdfdfd;
+}
+input,a{outline:none;}
+header{
+    height: 0.9rem;
+    width: 100.1%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    background: url("../img/daohang_fanhui.png") no-repeat center;
+    background-size: 0.48rem 0.3rem;
+}
+.account{
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #e60000;
+    font-weight: 600;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.9rem;
+    border-top: 0.02rem solid #d2d2d2;
+}
+.himt_box{
+    height: 4rem;
+    width: 6rem;
+    border: 0.02rem solid #e6e1e1;
+    border-radius: 0.15rem;
+    margin:  1.5rem auto 0;
+    background: #fcfcfc;
+    box-shadow: 0 0 0.1rem 0.05rem #e6e1e1;
+}
+.himt_box p{
+    font-size: 0.32rem;
+}
+.himt_box >p:first-child{
+    font-size: 0.36rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0 0.3rem;
+}
+.himt_box >p:nth-child(2){
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.himt_box >p:nth-child(3){
+    width: 100%;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.himt_box >p:nth-child(4){
+    width: 100%;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.himt_btn{
+    height: 0.9rem;
+    width: 4rem;
+    display: inline-block;
+    background: #e60000;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.9rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.1rem;
+    margin: 1.5rem 1.75rem 0;
+}
+.himt_btn >a{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+}

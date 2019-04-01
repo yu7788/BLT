@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/attend.css">
+    <script type="text/javascript" src="../js/jquery-2.2.1.js"></script>
+</head>
+<body>
+<header>
+    <a href="home.html"><div class="logo"></div></a>
+    <div class="nav_btn nav_btn_a"></div>
+    <ul class="nav">
+        <li><a href="#">貝萊通机器人</a></li>
+        <li><a href="account.html">我的账户</a></li>
+    </ul>
+</header>
+<section>
+    <div class="details">
+        <span class="detail_logo"></span>
+        <p class="detail_name">全球联营基金会</p>
+        <p class="detail_id">编号: <span>456</span></p>
+        <h3>剩余投注金额</h3>
+        <p class="detail_sum">123456789</p>
+        <div class="aim">
+            <p>目标金额</p>
+            <p>9999999</p>
+        </div>
+        <div class="total">
+            <p>累计投注</p>
+            <p>123456</p>
+        </div>
+        <div class="residue">
+            <p>账户余额</p>
+            <p>8888888</p>
+        </div>
+    </div>
+    <div class="bet">
+        <form action="#" class="form" id="form" onsubmit="return check(this)">
+            <div class="clearfix">
+                <div class="row clearfix">
+                    <div class="lbl">
+                        <label for="number">投注金额:</label>
+                    </div>
+                    <div class="ctrl">
+                        <input type="text" id="number" class="number" placeholder="输入投注金额">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" name="submit" id="submit" class="submit" value="立即参与">
+        </form>
+        <p class="deal">参与时默认您已同意我们的相关协议</p>
+    </div>
+</section>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".nav_btn").click(function () {
+            $(".nav").slideToggle(200);
+            if ($(this).hasClass("nav_btn_a")){
+                $(this).removeClass("nav_btn_a").addClass("nav_btn_b")
+            } else{
+                $(this).removeClass("nav_btn_b").addClass("nav_btn_a")
+            }
+
+        });
+        $("section").click(function () {
+            $(".nav").slideUp(200);
+            $(this).removeClass("nav_btn_b").addClass("nav_btn_a")
+        })
+    })
+    })
+</script>
+</html>

@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+            currClientWidth = document.documentElement.clientWidth;
+            if (currClientWidth > 768){
+                currClientWidth = 768;
+            }
+            if (currClientWidth < 320){
+                currClientWidth = 320;
+            }
+            fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+            document.documentElement.style.fontSize = fontValue + '%';
+        }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/account.css">
+    <script type="text/javascript" src="../js/jquery-2.2.1.js"></script>
+</head>
+<body>
+<header>
+    <a href="home.html"><div class="logo"></div></a>
+    <p class="account">我的账户</p>
+</header>
+<section>
+
+    <!--今日收益-->
+    <div class="account_title">
+        <div class="title_box">
+            <div class="line"></div>
+            <h3>上期收益</h3>
+            <p class="earnings_num">123456</p>
+            <div class="title_logo"></div>
+            <a href="#">查看详情</a>
+        </div>
+    </div>
+
+    <!--账户情况列表-->
+    <ul class="account_lists">
+        <li>
+            <a href="balance.html" class="list_a">
+                <p>账户资产</p>
+                <span>9876545555321</span>
+                <img src="../img/right_hui.png" />
+            </a>
+        </li>
+        <li>
+            <a href="gain.html" class="list_b">
+                <p>收益记录</p>
+                <span>987654321</span>
+                <img src="../img/right_hui.png" />
+            </a>
+        </li>
+        <li>
+            <a href="interest.html" class="list_c">
+                <p>套利订单</p>
+                <img src="../img/right_hui.png" />
+            </a>
+        </li>
+        <li>
+            <a href="check.html" class="list_d">
+                <p>账单记录</p>
+                <img src="../img/right_hui.png" />
+            </a>
+        </li>
+        <li>
+            <a href="#" class="list_e">
+                <p>退出</p>
+                <img src="../img/right_hui.png" />
+            </a>
+        </li>
+    </ul>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/himt.css">
+    <script type="text/javascript" src="../js/jquery-2.2.1.js"></script>
+</head>
+<body>
+<header>
+    <a href="balance.html"><div class="logo"></div></a>
+    <p class="account">温馨提示</p>
+</header>
+<section>
+    <div class="himt_box">
+        <p>貝萊通社区:</p>
+        <p>如您需要充值或者提现</p>
+        <p>请通过社区等相关渠道联系我们</p>
+        <p>交易币种参考USDT</p>
+    </div>
+    <div class="himt_btn"><a href="balance.html">确定</a></div>
+</section>
+
+</body>
+</html>

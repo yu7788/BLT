@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+
+        (function(){
+            var currClientWidth,
+                fontValue,
+                originWidth;
+            originWidth = 750;//ui设计稿的宽度，一般750或640
+            __resize();
+
+            window.addEventListener('resize', __resize, false);
+
+            function __resize() {
+                currClientWidth = document.documentElement.clientWidth;
+                if (currClientWidth > 768){
+                    currClientWidth = 768;
+                }
+                if (currClientWidth < 320){
+                    currClientWidth = 320;
+                }
+                fontValue = ((625 * currClientWidth) / originWidth).toFixed(2);
+                document.documentElement.style.fontSize = fontValue + '%';
+            }
+        })();
+    </script>
+    <title>貝萊通</title>
+    <link rel="stylesheet" href="../css/check.css">
+    <link rel="stylesheet" href="../css/page.css">
+</head>
+<body>
+<header>
+    <a href="account.html"><div class="logo"></div></a>
+    <p class="account">账单记录</p>
+    <div class="service"></div>
+</header>
+<section>
+    <div class="notice">
+        <span></span>
+        <p>如有疑问请联系平台客服</p>
+    </div>
+    <ul class="lists">
+        <li class="list">
+            <p class="type">账户提现</p>
+            <p class="sum">1234&nbsp;BLT</p>
+            <p class="time">2018-11-11 12:30</p>
+        </li>
+    </ul>
+    <ul class="pagination">
+        <li class="disabled">
+            <span><<</span>
+        </li>
+        <li class="active">
+            <span>1</span>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">>></a>
+        </li>
+
+    </ul>
+</section>
+</body>
+</html>
